@@ -1,18 +1,18 @@
 body {
-    color: #40514E;
+    background-color: #7579e7;
     margin: 0; 
     text-align: center; 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
     padding-top: 3%;
     padding-bottom: 1%;
     line-height: 50px; 
-    color:black;
+    color: white;
     font-size: 2.5rem;
     margin: 50px auto 0 auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .intro {
@@ -24,8 +24,8 @@ h1 {
     text-align: left;
     padding-right: 30%;
     padding-left: 30%;
-    font-family: 'Montserrat', sans-serif;
-    color:black;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
     font-size: 1.25rem;
 }
 
@@ -41,51 +41,59 @@ ul {
 }
 
 .footer li a {
-    color: white;
+    color: #7579e7;
     text-decoration: none;
     font-size: 35px;
 }
 
 .footer li a:hover{
-    color: #cccccc; 
+    color: hotpink; 
 }
 
+.footer li a:active {
+    color: #b9fffc;
+    text-decoration: underline;
+  }
+
 .footer {
-    background-color: #7579e7;
+    background-color: white;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 20px 0 20px;
+    padding: 10px 0 10px;
    
 }
 
 .footer p{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: #7579e7;
+    font-family: 'Open Sans', sans-serif;
     text-align: center; 
 }
 
 a:link {
-    color:  #7579e7;
-    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: hotpink;
   }
   
-
 a:visited {
-    color: #9ab3f5;
-    text-decoration: none;
-  }
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: hotpink;
+  } 
   
 
 a:hover {
     color: hotpink;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: hotpink;
   }
   
 
 a:active {
     color: #b9fffc;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: hotpink;
   }
