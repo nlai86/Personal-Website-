@@ -1,0 +1,99 @@
+body {
+    background-color: #7579e7;
+    margin: 0; 
+    text-align: center; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    line-height: 50px; 
+    color: white;
+    font-size: 2.5rem;
+    margin: 50px auto 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.intro p {
+    text-align: left;
+    padding-right: 30%;
+    padding-left: 30%;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1.25rem;
+}
+
+ul {
+    margin: 0; 
+    padding: 0;
+}
+
+.footer li {
+    display: inline-block; 
+    margin: 6px; 
+    list-style: none; 
+}
+
+.footer li a {
+    color: #7579e7;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.footer li a:hover{
+    color: hotpink; 
+}
+
+.footer li a:active {
+    color: #b9fffc;
+    text-decoration: underline;
+  }
+
+.footer {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px;
+   
+}
+
+.footer p{
+    color: #7579e7;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; 
+}
+
+a:link {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: hotpink;
+  }
+  
+a:visited {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: hotpink;
+  } 
+  
+
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+    text-decoration-color: hotpink;
+  }
+  
+
+a:active {
+    color: #b9fffc;
+    text-decoration: underline;
+    text-decoration-color: hotpink;
+  }
