@@ -97,3 +97,10 @@ a:active {
     text-decoration: underline;
     text-decoration-color: hotpink;
   }
+
+
+@media screen and (max-width: 900px) {
+    .bob{
+        margin-top: 100px;
+    }
+}
