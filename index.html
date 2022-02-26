@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    <nav>   
-        <ul class="nav-buttons"> 
+    <nav id="navbar">   
+        <ul class="nav-buttons" id = "menu"> 
             <li><a href="#about-section">About</a></li>
             <li><a href="#projects-section">Projects</a></li>
         </ul>
@@ -32,7 +32,6 @@
         </ul>
 
     </nav>
-    
 
     <div class="bio" id="about-section">
         <div class="image"></div>
@@ -63,3 +62,18 @@
 
 
 </html>
+
+
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+    window.onscroll = function (){
+        if (window.pageYOffset >= menu.offsetTop) {
+            navbar.classList.add("sticky");
+        } 
+        else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>>
