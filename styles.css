@@ -1,12 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
 body {
     background: white;
 }
 
 nav {
-    margin:0 !important;
-	padding: 0px !important;
-    /*
-    background-color: green; */
+    padding-top: 25px;
+    padding-bottom: 15px;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -17,6 +22,7 @@ nav {
     list-style: none;
     padding-right: 70%;
     padding-top: 10px;
+    padding-left: 75px;
 }
 
 .nav-buttons a { 
@@ -26,10 +32,9 @@ nav {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;  
     position: relative;
-    padding-left: 30px;
-    padding-right: 60px;
-}
+    padding-right: 30px;
 
+}
 
 .nav-buttons a::after {
     content: '';
@@ -79,14 +84,15 @@ img {
 }
 
 .bio-text h1 {
-    text-align: right;
+    font-size: 33px;
+    text-align: left;
 }
 
 .bio-text {
     font-family: 'Ubuntu', sans-serif;
     padding-left: 5%; 
     padding-top: 5%;
-    text-align: right; 
+    text-align: left; 
     width: 40%;
 
 }
@@ -96,13 +102,22 @@ img {
     justify-content: center;
 }
 
+.bio p {
+    color: #524D4D;
+    font-size: 18px;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+}
+
 .projects {
+    margin-top: 50px;
     margin-left: 70px;
     font-family: 'Ubuntu', sans-serif;
     padding: 0;
 }
 
 .projects p{
+    color: #524D4D ;
     margin-left: 100px;
     margin-top: 25px;
     padding-bottom: 20%;
