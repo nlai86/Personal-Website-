@@ -9,8 +9,8 @@ body {
 }
 
 nav {
-    padding-top: 25px;
-    padding-bottom: 15px;
+    padding-top: 1.6em;
+    padding-bottom: 1em;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -23,29 +23,29 @@ nav {
     justify-content: space-evenly;
     list-style: none;
     padding-right: 70%;
-    padding-top: 10px;
-    padding-left: 75px;
+    padding-top: 0.625em;
+    padding-left: 4.6875em;
 }
 
 .nav-buttons a { 
     color: black;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;  
     position: relative; 
-    margin-right: 30px;
+    margin-right: 1.875em;
 }
 
 .nav-buttons a::after {
     content: '';
-    height: 2.5px; 
+    height: 0.16em; 
     background-color:#FB94E8;
     transition: 0.3s;
     position: absolute;
     width: 0;
     left: 0;
-    bottom: -10px;
+    bottom: -0.625em;
 }
 .nav-buttons a:hover:after {
     width: 100%;
@@ -59,8 +59,8 @@ nav {
 }
 
 .buttons a{
-    padding-top: 10px; 
-    padding-right: 40px;
+    padding-top: 0.625em; 
+    padding-right: 2.5em;
     color: black;
     display: flex;
     flex-direction: row;
@@ -79,9 +79,9 @@ nav {
 .image{
     content:url(/Images/me_pic2_rounded.png);
     text-align: left;
-    height: 550px;
-    padding-top: 40px;
-    padding-left: 350px;
+    height: 34.375em;
+    padding-top: 2.5em;
+    padding-left: 21.875em;
 
 } 
 
@@ -91,7 +91,7 @@ img {
 }
 
 .bio-text h1 {
-    font-size: 33px;
+    font-size: 2.0625em;
     text-align: left;
 }
 
@@ -105,29 +105,29 @@ img {
 }
 
 .bio {
-    padding-top: 80px;
+    padding-top: 5em;
     display: flex;
     justify-content: center;
 }
 
 .bio p {
     color: #524D4D;
-    font-size: 18px;
+    font-size: 1.125em;
     margin-block-start: 2em;
     margin-block-end: 2em;
 }
 
 .projects {
-    margin-top: 50px;
-    margin-left: 70px;
+    margin-top: 3.125em;
+    margin-left: 4.375em;
     font-family: 'Ubuntu', sans-serif;
     padding: 0;
 }
 
 .projects p{
     color: #524D4D ;
-    margin-left: 100px;
-    margin-top: 25px;
+    margin-left: 6.25em;
+    margin-top: 1.5625em;
     padding-bottom: 20%;
 }
 
@@ -141,6 +141,22 @@ nav.sticky {
 #internship {
     text-decoration: underline;
     text-decoration-color: #FB94E8;
-    text-decoration-thickness: 2.5px;
-    text-underline-offset: 5px;
+    text-decoration-thickness: 0.15625em;
+    text-underline-offset: 0.3125em;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+    }
+  }
+
+
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
 }
