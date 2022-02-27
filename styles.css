@@ -20,6 +20,7 @@ nav {
 .nav-buttons {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     list-style: none;
     padding-right: 70%;
     padding-top: 10px;
@@ -32,22 +33,19 @@ nav {
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;  
-    position: relative;
-    padding-right: 30px;
-
+    position: relative; 
+    margin-right: 30px;
 }
 
 .nav-buttons a::after {
     content: '';
-    position: absolute;
-    width: 0; 
     height: 2.5px; 
-    background-color:#FB94E8 ;
-    display: block;
-    margin: auto;
+    background-color:#FB94E8;
     transition: 0.3s;
+    position: absolute;
+    width: 0;
     left: 0;
-    bottom: -5px;
+    bottom: -10px;
 }
 .nav-buttons a:hover:after {
     width: 100%;
@@ -138,4 +136,11 @@ nav.sticky {
     position: fixed;
     top: 0;
     left: 0;
+}
+
+#internship {
+    text-decoration: underline;
+    text-decoration-color: #FB94E8;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 5px;
 }
