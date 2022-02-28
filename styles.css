@@ -56,17 +56,14 @@ nav {
     flex-direction: row;
     list-style: none;
     float: right;
+    margin-top: 0.6250em;
 }
+
 
 .buttons a{
-    padding-top: 0.625em; 
-    padding-right: 2.5em;
     color: black;
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-
-}
+    padding-right: 2.5em;
+} 
 
 .buttons a:hover {
     color: #FB94E8 ;
