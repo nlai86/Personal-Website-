@@ -1,43 +1,85 @@
-* {
-    padding: 0;
-    margin: 0;
+selector {
+    property: var(--variable-name);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: 'Ubuntu', sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: white;
+  --primary-color: black;
+  --secondary-color: #FB94E8;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
+
+html {
+  scroll-behavior: smooth; /* scroll behaviour */
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/*
+a:hover {
+  color: var(--secondary-color); 
+} */
 
 body {
-    background: white;
+  font-family: var(--font-family);
 }
 
 nav {
-    padding-top: 1.6em;
-    padding-bottom: 1em;
-    width: 100%;
+    position: sticky; /* makes the navbar stick to the top */
+    top: 0;
+    left: 0;
+    z-index: 1; /* makes the nav bar display over other elements on the page */
     display: flex;
-    flex-direction: row;
-    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    margin: auto;
+    /*
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */  /* get rid of box shadow */
+  }
+
+nav h1 {
+    color: var(--primary-color);
 }
 
-.nav-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    padding-right: 70%;
-    padding-top: 0.625em;
-    padding-left: 4.6875em;
-}
-
-.nav-buttons a { 
-    color: black;
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
     text-decoration: none;
     font-size: 1em;
-    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;  
     position: relative; 
     margin-right: 1.875em;
 }
 
-.nav-buttons a::after {
+nav a::after {
     content: '';
     height: 0.16em; 
     background-color:#FB94E8;
@@ -47,113 +89,173 @@ nav {
     left: 0;
     bottom: -0.625em;
 }
-.nav-buttons a:hover:after {
-    width: 100%;
+
+nav a:hover::after {
+    width: 100%
 }
 
-.buttons {  
+nav ul {
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    float: right;
-    margin-top: 0.6250em;
+    gap: 1.9rem;
 }
 
-
-.buttons a{
-    color: black;
-    padding-right: 2.5em;
-} 
-
-.buttons a:hover {
-    color: #FB94E8 ;
+nav ul li {
+    font-weight: bold;
 }
 
-.buttons a:active {
-    color: #FB94E8 ;
+.burger-menu {
+color: var(--primary-color);
+font-size: 2rem;
+border: 0;
+background-color: transparent;
+cursor: pointer;
+display: none;
 }
 
-.image{
-    content:url(/Images/me_pic2_rounded.png);
-    text-align: left;
-    height: 34.375em;
-    padding-top: 2.5em;
-    padding-left: 21.875em;
-
-} 
-
-img {
-    max-width: 100%;
-    max-height: 100%;
+.hero {
+  padding-top: 6rem; /* Pushes the hero section down */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
 }
 
-.bio-text h1 {
-    font-size: 2.0625em;
-    text-align: left;
-}
-
-.bio-text {
-    font-family: 'Ubuntu', sans-serif;
-    padding-left: 5%; 
-    padding-top: 5%;
-    text-align: left; 
-    width: 40%;
-
+.hero img {
+  height: 37.5rem;
+  width: 37.5rem;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-border-radius:25px; 
+  -webkit-border-radius:3-px;
+  border-radius:37px; /* curavature of border */
 }
 
 .bio {
-    padding-top: 5em;
-    display: flex;
-    justify-content: center;
+  /*
+  width: 25rem; */
+  padding: 0.625rem;
+  border-radius: 6px;
+
+} 
+
+.bio h2 {
+  font-family: var(--font-family);
+  margin-bottom: var(--bottom-margin);
+  font-size: 2.0625em;
 }
 
 .bio p {
-    color: #524D4D;
-    font-size: 1.125em;
-    margin-block-start: 2em;
-    margin-block-end: 2em;
+  color: #524D4D;
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  padding: 1rem 0;
+  font-size: 1.125em;
 }
 
-.projects {
-    margin-top: 3.125em;
-    margin-left: 4.375em;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 0;
+#currently {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  text-decoration-thickness: 0.15625em;
+  text-underline-offset: 0.3125em;
 }
 
-.projects p{
-    color: #524D4D ;
-    margin-left: 6.25em;
-    margin-top: 1.5625em;
-    padding-bottom: 20%;
+.projects h2{
+  text-align: center;
 }
 
-nav.sticky {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
+.contact {
+  padding-top: 11rem;
 }
 
-#internship {
-    text-decoration: underline;
-    text-decoration-color: #FB94E8;
-    text-decoration-thickness: 0.15625em;
-    text-underline-offset: 0.3125em;
+.contact h2{
+  text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-    }
+.buttons {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.875rem;
+}
+
+.buttons a {
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+  justify-content: space-between;
+} 
+
+.buttons a :hover {
+  color: var(--secondary-color);
+}
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+footer p {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+
+@media screen and (max-width: 720px) {
+  /*changes reflects on screen with a width of 720px and below*/
+
+  nav {
+    padding: 1.5rem 1rem;
   }
 
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
 
-@viewport {
-    zoom: 1.0;
-    width: extend-to-zoom;
+  nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  
+  .hero img {
+    height: 30rem;
+    width: 20rem;
+  }
+
+  .bio {
+    margin-top: 2rem;
+    width: 20.5rem;
+  }
+
+  .contact {
+    padding-top: 3rem;
+  }
 }
 
-@-ms-viewport {
-    zoom: 1.0;
-    width: extend-to-zoom;
-}
+
