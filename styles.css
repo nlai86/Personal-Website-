@@ -239,6 +239,7 @@ footer p {
   }
 
   .hero {
+    padding-top: 1rem; /* Pushes the hero section down */
     margin-top: -4rem;
     flex-direction: column-reverse;
     gap: 0;
