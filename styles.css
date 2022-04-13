@@ -219,10 +219,11 @@ footer p {
     flex-direction: column;
     top: 86px;
     left: 10%;
-    width: 80%;
+    width: 80%; 
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
+    padding-bottom: 1rem;
   }
 
   nav ul li {
