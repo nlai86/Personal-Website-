@@ -210,16 +210,19 @@ footer p {
   /*changes reflects on screen with a width of 720px and below*/
 
   nav {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem; 
+    padding-left: 0;
   }
 
   nav ul {
     position: fixed;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color); 
     flex-direction: column;
-    top: 86px;
-    left: 10%;
-    width: 80%; 
+    width: 100%;
+    padding-left: 2rem; 
+    top: 86px;/*
+    left: 15%; 
+    width: 80%;  */
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
@@ -266,3 +269,16 @@ footer p {
       margin-top: 1rem;
   }
 }
+
+/* 
+Things to fix:
+- Website needs to look the same on laptop and desktop 
+- Underline hover are two different heights
+- Add some animations (e.g. scrolling, loading) 
+- Scaling on tablets and galaxy fold 
+
+Future Additions: 
+- Adding projects section
+- Adding Resume 
+
+*/
