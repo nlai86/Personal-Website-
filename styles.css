@@ -212,6 +212,7 @@ footer p {
   nav {
     padding: 1.5rem 1rem; 
     padding-left: 0;
+    margin-bottom: 3em;
   }
 
   nav ul {
@@ -274,14 +275,7 @@ footer p {
       left: 0;
       bottom: -0.625em;
   }
-
-
-
-
 }
-
-
-
 
 @media screen and (max-width: 900px) {
 
@@ -308,14 +302,15 @@ footer p {
   text-decoration-color: var(--secondary-color);
   text-decoration-thickness: 0.15625em;
   text-underline-offset: 0.2em;
-}
+  }
 
 }
+
 
 /* 
 Things to fix:
-- Website needs to look the same on laptop and desktop 
 - Add some animations (e.g. scrolling, loading) 
+- Fix image load speed 
 
 
 Future Changes: 
