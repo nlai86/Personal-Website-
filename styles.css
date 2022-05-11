@@ -220,9 +220,7 @@ footer p {
     flex-direction: column;
     width: 100%;
     padding-left: 2rem; 
-    top: 86px;/*
-    left: 15%; 
-    width: 80%;  */
+    top: 86px;
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
@@ -261,23 +259,67 @@ footer p {
   .contact {
     padding-top: 3rem;
   }
+
+  h1 {
+    padding-left: 1.25rem;
+  }
+
+  nav a::after {
+      content: '';
+      height: 0.2em; 
+      background-color:#FB94E8;
+      transition: 0.3s;
+      position: absolute;
+      width: 0;
+      left: 0;
+      bottom: -0.625em;
+  }
+
+
+
+
 }
 
 
+
+
 @media screen and (max-width: 900px) {
-  .hero{
-      margin-top: 1rem;
+
+  .hero {
+    padding-top: 1rem; /* Pushes the hero section down */
   }
+  
+  .hero img {
+    height: 30rem;
+    width: 20rem;
+  }
+
+  .bio {
+    margin-top: 2rem;
+    width: 20.5rem;
+  }
+
+  .contact {
+    padding-top: 4rem;
+  }
+
+  #currently {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  text-decoration-thickness: 0.15625em;
+  text-underline-offset: 0.2em;
+}
+
 }
 
 /* 
 Things to fix:
 - Website needs to look the same on laptop and desktop 
-- Underline hover are two different heights
 - Add some animations (e.g. scrolling, loading) 
-- Scaling on tablets and galaxy fold 
 
-Future Additions: 
+
+Future Changes: 
+- Clean up code 
 - Adding projects section
 - Adding Resume 
 
