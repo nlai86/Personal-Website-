@@ -1,5 +1,7 @@
 body {
   background-color: white;
+  overflow:visible;
+  color: white;
 }
 
 .main-container {
@@ -14,8 +16,11 @@ body {
   overflow: auto;
 }
 
-.menu {
+.menu{
+  color: white;
   display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
 
 .menu li a {
